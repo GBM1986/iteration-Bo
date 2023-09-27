@@ -2,18 +2,29 @@ const numbers = [1, 2, 3, 4, 5];
 
 /* opgave 1 */
 console.group("opgave 1");
-// din kode her
+numbers.forEach(function (number) {
+    console.log(number);
+});
+let sum = 0;
+numbers.forEach(function (number) {
+    sum += number;
+});
 
+console.group(sum);
+
+let max = numbers[0];
+numbers.forEach(function (number) {
+    if (number > max) {
+        max = number;
+    }
+});
+console.log("største talen er: "+max);
 
 console.groupEnd();
 
 
 /* opgave 2 */
 console.group("opgave 2");
-// din kode her
-
-
-console.groupEnd();
 
 
 /* opgave 3 */
